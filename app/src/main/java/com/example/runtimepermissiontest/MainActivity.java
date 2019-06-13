@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        Button nextActivity= findViewById(R.id.next_ContactsTest);//转至获取电话本功能。
+        nextActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ContactsTest.class);
+                startActivity(intent);
+            }
+        });
     }
     private  void call(){
         try{
