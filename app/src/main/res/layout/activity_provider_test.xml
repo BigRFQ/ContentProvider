@@ -4,36 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ProviderTest">
 
     <Button
-        android:id="@+id/make_call"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:text="Make Call"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/next_ContactsTest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="转至获取电话本功能"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/make_call"
-        app:layout_constraintVertical_bias="0.899"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/next_ProviderTest"
+        android:id="@+id/add_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="转至内容提供器测试"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/next_ContactsTest"
-        app:layout_constraintVertical_bias="1.0"
+        android:text="添加数据至Book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/query_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="数据查询Book"
+        app:layout_constraintTop_toTopOf="@+id/add_data"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/update_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="数据更新Book"
+        app:layout_constraintTop_toTopOf="@+id/add_data"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/delete_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="数据删除Book"
+        app:layout_constraintTop_toTopOf="@+id/add_data"
         tools:layout_editor_absoluteX="0dp" />
 </android.support.constraint.ConstraintLayout>

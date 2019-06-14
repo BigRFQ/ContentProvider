@@ -39,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button nextProvidertest= findViewById(R.id.next_ProviderTest);//转至内容提供器测试。
+        nextProvidertest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ProviderTest.class);
+                startActivity(intent);
+            }
+        });
     }
     private  void call(){
         try{
