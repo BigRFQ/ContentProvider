@@ -61,8 +61,17 @@ public class ProviderTest extends AppCompatActivity {
                 ContentValues values = new ContentValues();
                 values.put("name","赵六的一生");
                 values.put("author","赵六");
+                values.put("price",240);
                 getContentResolver().update(uri,values,null,null);
 
+            }
+        });
+        Button deleteData =  findViewById(R.id.delete_data);
+        deleteData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("content://com.example.filepersistencetest.provider/book"+newId);
+                getContentResolver().delete(uri,null,null  );
             }
         });
     }
